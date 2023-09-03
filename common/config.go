@@ -2,7 +2,8 @@ package common
 
 var (
 	OneDayOfHours = 60 * 60 * 24
-	JWTSecret     = "yyk*20121"
+	JWTSecret     = "yyk*2012"
+	JWTSecret_2   = "yyk*20121"
 )
 
 var errmsg struct {
