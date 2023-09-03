@@ -1,0 +1,68 @@
+service step {
+	@handler stepAdd
+	post /step/add(stepAddReq) returns (Resp)
+	
+	@handler stepSearch
+	post /step/search(stepSearchReq) returns (Resp)
+	
+	@handler stepUpdate
+	post /step/update(stepUpdateReq) returns (Resp)
+	
+}
+
+type (
+	stepAddReq {
+		Name      string `form:"name"`
+		Productid string `form:"product_id"`
+		Maker     string `form:"maker,optional"`
+		Num       int    `form:"num,optional"`
+		MakeTime  int64  `form:"maketime,optional"`
+		Bad       int    `form:"bad,optional"`
+		Time      int64  `form:"time,optional"`
+		Status    int    `form:"status,optional"`
+	}
+	stepSearchReq {
+		Productid string `form:"product_id,optional"`
+	}
+
+	stepUpdateReq {
+		Id        int    `form:"id,optional"`
+		Name      string `form:"name,optional"`
+		Productid string `form:"product_id,optional"`
+		Maker     string `form:"maker,optional"`
+		Num       int    `form:"num,optional"`
+		MakeTime  int64  `form:"maketime,optional"`
+		Bad       int    `form:"bad,optional"`
+		Time      int64  `form:"time,optional"`
+		Status    int    `form:"status,optional"`
+	}
+
+	Resp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	// UserInfo {
+	// 	Id     string `gorm:"column:id",json:"id"`
+	// 	Tel string `gorm:"column:tel",json:"tel"`
+	// 	Logo   string `gorm:"column:logo",json:"logo"`
+	// 	Name  string `gorm:"column:name",json:"name"`
+	//     Sex  string `gorm:"column:sex",json:"sex"`
+	//     Address  string `gorm:"column:address",json:"address"`
+	//     Lag  string `gorm:"column:lag",json:"lag"`
+	//     Lng  string `gorm:"column:lng",json:"lng"`
+	//     Uuid string `gorm:"column:uuid",json:"uuid"`
+	// }
+
+	// OrderReply {
+	// 	Id    string      `json:"id"`
+	// 	Name  interface{} `json:"name"`
+	// 	Bi    []*BiInfo   `json:"biinfo"`
+	// 	Count int         `json:"count"`
+	// }
+	// OrderUpdateReplay {
+	// 	Result bool `json:"result"`
+	// }
+
+)

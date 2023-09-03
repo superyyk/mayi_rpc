@@ -1,0 +1,61 @@
+service skill {
+	@handler Pub
+	post /skill/pub(PubReq) returns (Resp)
+	
+	@handler SkillSet
+	post /skill/set(SetReq) returns (Resp)
+	@handler SkillGet
+	post /skill/get(GetReq) returns (Resp)
+	
+	@handler Consumer
+	post /skill/consumer(ConsumerReq) returns (Resp)
+	
+}
+
+type (
+	SetReq {
+		Num    int    `form:"num"`
+		Userid string `form:"userid"`
+	}
+	GetReq {
+		Userid string `form:"userid"`
+	}
+
+	PubReq {
+		Topic string `form:"topic"`
+		Uid   string `form:"uid"`
+	}
+
+	ConsumerReq {
+		Topic string `form:"topic"`
+		//Pass string `form:"pass"`
+	}
+	Resp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	// UserInfo {
+	// 	Id     string `gorm:"column:id",json:"id"`
+	// 	Tel string `gorm:"column:tel",json:"tel"`
+	// 	Logo   string `gorm:"column:logo",json:"logo"`
+	// 	Name  string `gorm:"column:name",json:"name"`
+	//     Sex  string `gorm:"column:sex",json:"sex"`
+	//     Address  string `gorm:"column:address",json:"address"`
+	//     Lag  string `gorm:"column:lag",json:"lag"`
+	//     Lng  string `gorm:"column:lng",json:"lng"`
+	//     Uuid string `gorm:"column:uuid",json:"uuid"`
+	// }
+
+	// OrderReply {
+	// 	Id    string      `json:"id"`
+	// 	Name  interface{} `json:"name"`
+	// 	Bi    []*BiInfo   `json:"biinfo"`
+	// 	Count int         `json:"count"`
+	// }
+	// OrderUpdateReplay {
+	// 	Result bool `json:"result"`
+	// }
+
+)

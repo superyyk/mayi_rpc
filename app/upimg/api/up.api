@@ -1,0 +1,18 @@
+service upimage {
+	@handler UpFile
+	post /up/images(UpReq) returns (Resp)
+	
+}
+
+type (
+	UpReq {
+		UserUid string `form:"user_uuid"`
+		File    string `form:"file,optional"`
+	}
+
+	Resp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+)

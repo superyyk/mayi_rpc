@@ -1,0 +1,67 @@
+service kehu{
+	@handler AddKehu
+	post /kehu/add(AddReq) returns (Resp)
+	
+	@handler UpdateKehu
+	post /kehu/update(UpdateReq) returns (Resp)
+	
+	@handler SearchKehu
+	post /kehu/search(SearchReq) returns (Resp)
+
+	@handler TokenGet
+	post /kehu/add(AddReq) returns (Resp)
+	
+}
+
+type (
+	AddReq {
+		Id   int    `form:"id,optional"`
+		Name string `form:"name"`
+		Age  int    `form:"age,optional"`
+		//Imgs      string `form:"imgs,optional"`
+		//Unit      string `form:"unit"` //计量单位
+		Uid string `form:"uid,optional"`
+		//Guige     string `form:"guige,optional"`
+		//Suply     string `form:"suply,optional"`
+		//PerTime   string `form:"pertime,optional"`
+		//PerHaocai string `form:"perhaocai,optional"`
+		Puber string `form:"puber,optional"`
+		Time  string `form:"time,optional"`
+		//Price     string `form:"price,optional"`
+		Tip    string `form:"tip,optional"`
+		Status int    `form:"status,optional,default=0"`
+		Level  int    `form:"level,optional"`
+		Tel    string `form:"tel,optional"`
+		//Yuanliao  string `form:"yuanliao,optional"`
+	}
+	Resp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	UpdateReq {
+		Id   int    `form:"id,optional"`
+		Name string `form:"name,optional"`
+		Age  int    `form:"age,optional"`
+		//Imgs      string `form:"imgs,optional"`
+		//Unit      string `form:"unit"` //计量单位
+		Uid string `form:"uid,optional"`
+		//Guige     string `form:"guige,optional"`
+		//Suply     string `form:"suply,optional"`
+		//PerTime   string `form:"pertime,optional"`
+		//PerHaocai string `form:"perhaocai,optional"`
+		Puber string `form:"puber,optional"`
+		Time  string `form:"time,optional"`
+		//Price     string `form:"price,optional"`
+		Tip    string `form:"tip,optional"`
+		Status int    `form:"status,optional,default=0"`
+		Level  int    `form:"level,optional"`
+		Tel    string `form:"tel,optional"`
+		//Yuanliao  string `form:"yuanliao,optional"`
+	}
+
+	SearchReq {
+		Uid string `form:"uid"`
+	}
+)

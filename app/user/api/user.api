@@ -1,0 +1,118 @@
+type (
+	LoginReq {
+		Tel  string `form:"tel"`
+		Pass string `form:"pass"`
+	}
+	LoginResp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	LoginSmsReq {
+		Tel  string `form:"tel"`
+		Code string `form:"code"`
+		Uid  string `form:"uid"`
+	}
+	LoginSmsResp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	// UserInfo {
+	// 	Id     string `gorm:"column:id",json:"id"`
+	// 	Tel string `gorm:"column:tel",json:"tel"`
+	// 	Logo   string `gorm:"column:logo",json:"logo"`
+	// 	Name  string `gorm:"column:name",json:"name"`
+	//     Sex  string `gorm:"column:sex",json:"sex"`
+	//     Address  string `gorm:"column:address",json:"address"`
+	//     Lag  string `gorm:"column:lag",json:"lag"`
+	//     Lng  string `gorm:"column:lng",json:"lng"`
+	//     Uuid string `gorm:"column:uuid",json:"uuid"`
+	// }
+
+	// OrderReply {
+	// 	Id    string      `json:"id"`
+	// 	Name  interface{} `json:"name"`
+	// 	Bi    []*BiInfo   `json:"biinfo"`
+	// 	Count int         `json:"count"`
+	// }
+	// OrderUpdateReplay {
+	// 	Result bool `json:"result"`
+	// }
+	RegistReq {
+		Tel  string `form:"tel"`
+		Code string `form:"code"`
+		Pass string `form:"pass"`
+	}
+	RegistResp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	SmsReq {
+		Tel string `form:"tel"`
+	}
+	SmsResp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	OneKeyReq {
+		Tel    string `form:"tel"`
+		Token  string `form:"token"`
+		Openid string `form:"openid"`
+	}
+	OneKeyResp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+
+	ChangePassReq {
+		Tel  string `form:"tel"`
+		Code string `form:"code"`
+		Uid  string `form:"uid"`
+		Pass string `form:"pass"`
+	}
+	ChangePassResp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+	Resp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+	LoadUserReq {
+		UserUid string `form:"uid,optional"`
+	}
+)
+
+service user {
+	@handler getUserInfo
+	post /user/get_user_info(LoadUserReq) returns (Resp)
+	
+	@handler getChangePass
+	post /user/change_pass(ChangePassReq) returns (ChangePassResp)
+	
+	@handler getLogin
+	post /user/login(LoginReq) returns (LoginResp)
+	
+	@handler getLoginSms
+	post /user/loginsms(LoginSmsReq) returns (LoginSmsResp)
+	
+	@handler getRegist
+	post /user/regist(RegistReq) returns (RegistResp)
+	
+	@handler getSms
+	post /user/sms(SmsReq) returns (SmsResp)
+	
+	@handler getOneKey
+	post /user/onekey(OneKeyReq) returns (OneKeyResp)
+	
+}

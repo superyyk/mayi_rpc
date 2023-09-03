@@ -1,0 +1,9 @@
+Name: skill
+Host: 0.0.0.0
+Port: 10090
+
+SkillRpc:
+ Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: skill.rpc

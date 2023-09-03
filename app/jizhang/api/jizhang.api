@@ -1,0 +1,71 @@
+service jizhang {
+	@handler jizhangAdd
+	post /jizhang/add(jizhangAddReq) returns (Resp)
+	
+	@handler jizhangSearch
+	post /jizhang/search(jizhangSearchReq) returns (Resp)
+	
+	@handler jizhangUpdate
+	post /jizhang/update(jizhangUpdateReq) returns (Resp)
+	
+	//记账类型CURD
+	@handler jizhangLeixingAdd
+	post /jizhang/leixing/add(jizhangLeixingAddReq) returns (Resp)
+	
+	@handler jizhangLeixingSearch
+	post /jizhang/leixing/search(jizhangLeixingSearchReq) returns (Resp)
+	
+	@handler jizhangLeixingUpdate
+	post /jizhang/leixing/update(jizhangLeixingUpdateReq) returns (Resp)
+	
+}
+
+type (
+	jizhangAddReq {
+		Name      string `form:"name,optional"`
+		Num       string `form:"num,optional"`
+		Time      int64  `form:"time,optional"`
+		Status    int    `form:"status,optional"`
+		Leixing   string `form:"leixing,optional"`
+		Leixingid string `form:"leixingid,optional"`
+		Puber     string `form:"puber,optional"`
+		Ty        string `form:"ty,optional"`
+		Tip       string `form:"tip,optional"`
+	}
+	jizhangSearchReq {
+		Puber string `form:"puber,optional"`
+	}
+
+	jizhangUpdateReq {
+		Id        int    `form:"id,optional"`
+		Name      string `form:"name,optional"`
+		Num       string `form:"num,optional"`
+		Time      int64  `form:"time,optional"`
+		Status    int    `form:"status,optional"`
+		Leixing   string `form:"leixing,optional"`
+		Leixingid string `form:"leixingid,optional"`
+		Puber     string `form:"puber,optional"`
+		Ty        string `form:"ty,optional"`
+		Tip       string `form:"tip,optional"`
+	}
+	//记账类型
+	jizhangLeixingAddReq {
+		Name  string `form:"name"`
+		Puber string `form:"puber,optional"`
+	}
+	jizhangLeixingSearchReq {
+		Puber string `form:"puber,optional"`
+	}
+
+	jizhangLeixingUpdateReq {
+		Id     int    `form:"id,optional"`
+		Name   string `form:"name,optional"`
+		Status int    `form:"status,optional"`
+	}
+
+	Resp {
+		Res  string      `json:"res"`
+		Msg  string      `json:"msg"`
+		Data interface{} `json:"data"`
+	}
+)

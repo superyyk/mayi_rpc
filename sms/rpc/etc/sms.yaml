@@ -1,0 +1,6 @@
+Name: sms.rpc
+ListenOn: 0.0.0.0:10099
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: sms.rpc

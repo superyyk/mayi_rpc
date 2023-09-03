@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package user;
+
+// protoc-gen-go 版本大于1.4.0, proto文件需要加上go_package,否则无法生成
+option go_package = "./user";
+
+message IdRequest {
+    string id = 1;
+}
+message Area {
+    string code=1;
+    string name=2;
+}
+
+message UserResponse {
+    // 用户id
+    string id = 1;
+    // 用户名称
+   map<string,string> userinfo=2;
+    
+}
+
+service User {
+    rpc getUser(IdRequest) returns(UserResponse);
+}

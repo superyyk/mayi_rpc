@@ -1,0 +1,9 @@
+Name: worker
+Host: 0.0.0.0
+Port: 10040
+
+AuthRpc:
+  Etcd:
+    Hosts:
+    - 127.0.0.1:2379
+    Key: auth.rpc  

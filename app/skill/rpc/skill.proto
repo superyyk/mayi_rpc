@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+package skill;
+
+// protoc-gen-go 版本大于1.4.0, proto文件需要加上go_package,否则无法生成
+option go_package = "./skill";
+
+service Skill {
+    rpc getSkill(SkillRequest) returns(Rsp);
+    rpc setSkill(SetReq) returns(SetRsp);
+}
+
+message SkillRequest {
+    string uid=1;
+}
+message Rsp {
+
+string orderid=1;
+}
+
+message SetReq {
+  int64 num=1;
+  string userid=2;
+}
+
+message SetRsp {
+   bool ok=1;
+}
+
+//获取token
+message GetTokenRequest {
+    string userid = 1;
+    
+}
+
+
+message GetResponse {
+    string token=1;
+   
+}
+
+message Area {
+    string code=1;
+    string name=2;
+}
+//校验token
+message TokenRequest {
+    string token = 1;
+    
+}
+
+
+message TokenResponse {
+    string userid=1;
+    map<string,string> extend=2;
+    repeated Area area=3;
+   
+}
+

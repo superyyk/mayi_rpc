@@ -1,0 +1,20 @@
+Name: user
+Host: 0.0.0.0
+Port: 10010
+
+SmsRpc:
+  Etcd:
+    Hosts:
+    - 127.0.0.1:2379
+    Key: sms.rpc
+UserRpc:
+  Etcd:
+    Hosts:
+    - 127.0.0.1:2379
+    Key: user.rpc  
+AuthRpc:
+  Etcd:
+    Hosts:
+    - 127.0.0.1:2379
+    Key: auth.rpc        
+
