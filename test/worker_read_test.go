@@ -5,7 +5,7 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"mayi/db"
+	"github.com/superyyk/mayi_rpc/db"
 	"os"
 	"reflect"
 	"runtime"

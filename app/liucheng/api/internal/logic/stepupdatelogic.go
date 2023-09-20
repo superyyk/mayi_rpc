@@ -3,8 +3,8 @@ package logic
 import (
 	"context"
 
-	"mayi/app/liucheng/api/internal/svc"
-	"mayi/app/liucheng/api/internal/types"
+	"github.com/superyyk/mayi_rpc/app/liucheng/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/liucheng/api/internal/types"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

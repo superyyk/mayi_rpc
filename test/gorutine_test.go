@@ -3,8 +3,8 @@ package test
 import (
 	"context"
 	"fmt"
-	"mayi/db"
-	"mayi/tool"
+	"github.com/superyyk/mayi_rpc/db"
+	"github.com/superyyk/mayi_rpc/tool"
 	"strconv"
 	"sync"
 	"testing"

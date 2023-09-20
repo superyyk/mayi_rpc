@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
-	"mayi/app/liucheng/api/internal/logic"
-	"mayi/app/liucheng/api/internal/svc"
-	"mayi/app/liucheng/api/internal/types"
+	"github.com/superyyk/mayi_rpc/app/liucheng/api/internal/logic"
+	"github.com/superyyk/mayi_rpc/app/liucheng/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/liucheng/api/internal/types"
 )
 
 func stepSearchHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

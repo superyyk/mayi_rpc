@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"mayi/app/workers/api/internal/config"
-	"mayi/app/workers/api/internal/handler"
-	"mayi/app/workers/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/workers/api/internal/config"
+	"github.com/superyyk/mayi_rpc/app/workers/api/internal/handler"
+	"github.com/superyyk/mayi_rpc/app/workers/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

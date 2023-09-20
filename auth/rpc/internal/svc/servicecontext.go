@@ -1,6 +1,6 @@
 package svc
 
-import "mayi/auth/rpc/internal/config"
+import "github.com/superyyk/mayi_rpc/auth/rpc/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

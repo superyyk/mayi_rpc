@@ -6,7 +6,7 @@ package smscode
 import (
 	"context"
 
-	"mayi/sms/rpc/types/sms"
+	"github.com/superyyk/mayi_rpc/sms/rpc/types/sms"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

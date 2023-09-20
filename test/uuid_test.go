@@ -2,8 +2,8 @@ package test
 
 import (
 	"fmt"
-	"mayi/common"
-	"mayi/tool"
+	"github.com/superyyk/mayi_rpc/common"
+	"github.com/superyyk/mayi_rpc/tool"
 	"testing"
 )
 

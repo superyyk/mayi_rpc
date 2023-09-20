@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"mayi/common"
-	"mayi/model"
+	"github.com/superyyk/mayi_rpc/common"
+	"github.com/superyyk/mayi_rpc/model"
 	"testing"
 )
 

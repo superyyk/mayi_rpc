@@ -3,10 +3,10 @@ package logic
 import (
 	"context"
 
-	"mayi/app/kehu/api/internal/svc"
-	"mayi/app/kehu/api/internal/types"
-	"mayi/auth/rpc/types/auth"
-	"mayi/model"
+	"github.com/superyyk/mayi_rpc/app/kehu/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/kehu/api/internal/types"
+	"github.com/superyyk/mayi_rpc/auth/rpc/types/auth"
+	"github.com/superyyk/mayi_rpc/model"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

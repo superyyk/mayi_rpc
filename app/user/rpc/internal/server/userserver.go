@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"mayi/app/user/rpc/internal/logic"
-	"mayi/app/user/rpc/internal/svc"
-	"mayi/app/user/rpc/types/user"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/internal/logic"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/types/user"
 )
 
 type UserServer struct {

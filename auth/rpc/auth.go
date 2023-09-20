@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"mayi/auth/rpc/internal/config"
-	"mayi/auth/rpc/internal/server"
-	"mayi/auth/rpc/internal/svc"
-	"mayi/auth/rpc/types/auth"
+	"github.com/superyyk/mayi_rpc/auth/rpc/internal/config"
+	"github.com/superyyk/mayi_rpc/auth/rpc/internal/server"
+	"github.com/superyyk/mayi_rpc/auth/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/auth/rpc/types/auth"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

@@ -3,7 +3,7 @@ package db
 import (
 	"fmt"
 	"log"
-	"mayi/model"
+	"github.com/superyyk/mayi_rpc/model"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"

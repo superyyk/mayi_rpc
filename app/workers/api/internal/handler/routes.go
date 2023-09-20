@@ -4,7 +4,7 @@ package handler
 import (
 	"net/http"
 
-	"mayi/app/workers/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/workers/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/rest"
 )

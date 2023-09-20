@@ -3,9 +3,9 @@ package logic
 import (
 	"context"
 
-	"mayi/auth/rpc/internal/svc"
-	"mayi/auth/rpc/types/auth"
-	"mayi/tool"
+	"github.com/superyyk/mayi_rpc/auth/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/auth/rpc/types/auth"
+	"github.com/superyyk/mayi_rpc/tool"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

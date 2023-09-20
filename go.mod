@@ -1,6 +1,6 @@
-module mayi
+module github.com/superyyk/mayi_rpc
 
-go 1.18
+go 1.20
 
 require (
 	github.com/Shopify/sarama v1.37.2

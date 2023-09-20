@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"mayi/app/skill/rpc/internal/config"
-	"mayi/app/skill/rpc/internal/server"
-	"mayi/app/skill/rpc/internal/svc"
-	"mayi/app/skill/rpc/types/skill"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/internal/config"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/internal/server"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/types/skill"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

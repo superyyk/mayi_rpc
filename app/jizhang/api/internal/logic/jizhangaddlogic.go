@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"mayi/app/jizhang/api/internal/svc"
-	"mayi/app/jizhang/api/internal/types"
-	"mayi/model"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/types"
+	"github.com/superyyk/mayi_rpc/model"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

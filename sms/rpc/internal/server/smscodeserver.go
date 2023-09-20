@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"mayi/sms/rpc/internal/logic"
-	"mayi/sms/rpc/internal/svc"
-	"mayi/sms/rpc/types/sms"
+	"github.com/superyyk/mayi_rpc/sms/rpc/internal/logic"
+	"github.com/superyyk/mayi_rpc/sms/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/sms/rpc/types/sms"
 )
 
 type SmsCodeServer struct {

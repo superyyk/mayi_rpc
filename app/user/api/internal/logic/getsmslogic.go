@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"mayi/app/user/api/internal/svc"
-	"mayi/app/user/api/internal/types"
-	"mayi/sms/rpc/types/sms"
+	"github.com/superyyk/mayi_rpc/app/user/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/user/api/internal/types"
+	"github.com/superyyk/mayi_rpc/sms/rpc/types/sms"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

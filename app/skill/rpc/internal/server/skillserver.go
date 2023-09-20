@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"mayi/app/skill/rpc/internal/logic"
-	"mayi/app/skill/rpc/internal/svc"
-	"mayi/app/skill/rpc/types/skill"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/internal/logic"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/types/skill"
 )
 
 type SkillServer struct {

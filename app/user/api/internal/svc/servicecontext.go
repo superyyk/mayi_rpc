@@ -1,11 +1,11 @@
 package svc
 
 import (
-	"mayi/app/user/api/internal/config"
-	"mayi/app/user/rpc/userclient"
-	"mayi/auth/rpc/token"
-	"mayi/db"
-	"mayi/sms/rpc/smscode"
+	"github.com/superyyk/mayi_rpc/app/user/api/internal/config"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/userclient"
+	"github.com/superyyk/mayi_rpc/auth/rpc/token"
+	"github.com/superyyk/mayi_rpc/db"
+	"github.com/superyyk/mayi_rpc/sms/rpc/smscode"
 
 	"github.com/redis/go-redis/v9"
 	"github.com/jinzhu/gorm"

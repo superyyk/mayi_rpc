@@ -1,8 +1,8 @@
 package svc
 
 import (
-	"mayi/app/user/rpc/internal/config"
-	"mayi/db"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/internal/config"
+	"github.com/superyyk/mayi_rpc/db"
 
 	"github.com/jinzhu/gorm"
 )

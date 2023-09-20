@@ -6,7 +6,7 @@ package token
 import (
 	"context"
 
-	"mayi/auth/rpc/types/auth"
+	"github.com/superyyk/mayi_rpc/auth/rpc/types/auth"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
