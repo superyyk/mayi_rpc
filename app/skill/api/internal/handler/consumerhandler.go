@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
-	"mayi/app/skill/api/internal/logic"
-	"mayi/app/skill/api/internal/svc"
-	"mayi/app/skill/api/internal/types"
+	"github.com/superyyk/mayi_rpc/app/skill/api/internal/logic"
+	"github.com/superyyk/mayi_rpc/app/skill/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/skill/api/internal/types"
 )
 
 func ConsumerHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

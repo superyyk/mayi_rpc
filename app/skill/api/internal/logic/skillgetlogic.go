@@ -3,9 +3,9 @@ package logic
 import (
 	"context"
 
-	"mayi/app/skill/api/internal/svc"
-	"mayi/app/skill/api/internal/types"
-	"mayi/app/skill/rpc/types/skill"
+	"github.com/superyyk/mayi_rpc/app/skill/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/skill/api/internal/types"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/types/skill"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

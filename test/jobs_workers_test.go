@@ -3,7 +3,7 @@ package test
 import (
 	"context"
 	"fmt"
-	"mayi/db"
+	"github.com/superyyk/mayi_rpc/db"
 	"runtime"
 	"testing"
 	"time"

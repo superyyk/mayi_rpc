@@ -3,11 +3,11 @@ package logic
 import (
 	"context"
 
-	"mayi/app/user/api/internal/svc"
-	"mayi/app/user/api/internal/types"
-	"mayi/common"
-	"mayi/model"
-	"mayi/tool"
+	"github.com/superyyk/mayi_rpc/app/user/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/user/api/internal/types"
+	"github.com/superyyk/mayi_rpc/common"
+	"github.com/superyyk/mayi_rpc/model"
+	"github.com/superyyk/mayi_rpc/tool"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

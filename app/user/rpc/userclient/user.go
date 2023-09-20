@@ -6,7 +6,7 @@ package userclient
 import (
 	"context"
 
-	"mayi/app/user/rpc/types/user"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/types/user"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

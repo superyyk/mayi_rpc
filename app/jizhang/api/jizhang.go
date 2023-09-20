@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"mayi/app/jizhang/api/internal/config"
-	"mayi/app/jizhang/api/internal/handler"
-	"mayi/app/jizhang/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/config"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/handler"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

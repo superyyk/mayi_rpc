@@ -1,9 +1,9 @@
 package svc
 
 import (
-	"mayi/app/skill/api/internal/config"
-	"mayi/app/skill/rpc/skillclient"
-	"mayi/db"
+	"github.com/superyyk/mayi_rpc/app/skill/api/internal/config"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/skillclient"
+	"github.com/superyyk/mayi_rpc/db"
 
 	"github.com/Shopify/sarama"
 	"github.com/jinzhu/gorm"

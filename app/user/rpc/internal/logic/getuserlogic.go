@@ -3,8 +3,8 @@ package logic
 import (
 	"context"
 
-	"mayi/app/user/rpc/internal/svc"
-	"mayi/app/user/rpc/types/user"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/user/rpc/types/user"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

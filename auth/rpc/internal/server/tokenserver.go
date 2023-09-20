@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"mayi/auth/rpc/internal/logic"
-	"mayi/auth/rpc/internal/svc"
-	"mayi/auth/rpc/types/auth"
+	"github.com/superyyk/mayi_rpc/auth/rpc/internal/logic"
+	"github.com/superyyk/mayi_rpc/auth/rpc/internal/svc"
+	"github.com/superyyk/mayi_rpc/auth/rpc/types/auth"
 )
 
 type TokenServer struct {

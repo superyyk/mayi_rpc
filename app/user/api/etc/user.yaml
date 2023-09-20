@@ -5,7 +5,7 @@ Port: 10010
 SmsRpc:
   Etcd:
     Hosts:
-    - 127.0.0.1:2379
+    - 8.137.112.169:2379
     Key: sms.rpc
 UserRpc:
   Etcd:

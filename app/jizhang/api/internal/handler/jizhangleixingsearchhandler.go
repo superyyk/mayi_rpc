@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
-	"mayi/app/jizhang/api/internal/logic"
-	"mayi/app/jizhang/api/internal/svc"
-	"mayi/app/jizhang/api/internal/types"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/logic"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/types"
 )
 
 func jizhangLeixingSearchHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

@@ -4,8 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"mayi/model"
 	"strconv"
+
+	"github.com/superyyk/mayi_rpc/model"
 )
 
 func String_int(val string) int {
@@ -110,7 +111,6 @@ func Struct2Byte(msg *model.TestCity) []byte {
 	}
 	return res
 }
-
 
 ////string到int
 //int,err:=strconv.Atoi(string)

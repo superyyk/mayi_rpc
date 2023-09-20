@@ -1,9 +1,9 @@
 package svc
 
 import (
-	"mayi/app/kehu/api/internal/config"
-	"mayi/auth/rpc/token"
-	"mayi/db"
+	"github.com/superyyk/mayi_rpc/app/kehu/api/internal/config"
+	"github.com/superyyk/mayi_rpc/auth/rpc/token"
+	"github.com/superyyk/mayi_rpc/db"
 
 	"github.com/jinzhu/gorm"
 	"github.com/zeromicro/go-zero/zrpc"

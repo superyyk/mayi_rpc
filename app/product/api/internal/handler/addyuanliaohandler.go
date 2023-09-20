@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
-	"mayi/app/product/api/internal/logic"
-	"mayi/app/product/api/internal/svc"
-	"mayi/app/product/api/internal/types"
+	"github.com/superyyk/mayi_rpc/app/product/api/internal/logic"
+	"github.com/superyyk/mayi_rpc/app/product/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/product/api/internal/types"
 )
 
 func AddYuanliaoHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

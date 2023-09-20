@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"mayi/app/kehu/api/internal/svc"
-	"mayi/app/kehu/api/internal/types"
-	"mayi/model"
-	"mayi/tool"
+	"github.com/superyyk/mayi_rpc/app/kehu/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/kehu/api/internal/types"
+	"github.com/superyyk/mayi_rpc/model"
+	"github.com/superyyk/mayi_rpc/tool"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

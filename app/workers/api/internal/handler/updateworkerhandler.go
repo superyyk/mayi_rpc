@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"mayi/app/workers/api/internal/logic"
-	"mayi/app/workers/api/internal/svc"
-	"mayi/app/workers/api/internal/types"
+	"github.com/superyyk/mayi_rpc/app/workers/api/internal/logic"
+	"github.com/superyyk/mayi_rpc/app/workers/api/internal/svc"
+	"github.com/superyyk/mayi_rpc/app/workers/api/internal/types"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
 )

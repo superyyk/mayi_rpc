@@ -1,10 +1,10 @@
 package svc
 
 import (
-	"mayi/app/product/api/internal/config"
-	"mayi/db"
+	"github.com/superyyk/mayi_rpc/app/product/api/internal/config"
+	"github.com/superyyk/mayi_rpc/db"
 
-	"mayi/model/model"
+	"github.com/superyyk/mayi_rpc/model/model"
 
 	"github.com/jinzhu/gorm"
 	"github.com/zeromicro/go-zero/core/stores/sqlx"

@@ -1,8 +1,8 @@
 package svc
 
 import (
-	"mayi/app/jizhang/api/internal/config"
-	"mayi/db"
+	"github.com/superyyk/mayi_rpc/app/jizhang/api/internal/config"
+	"github.com/superyyk/mayi_rpc/db"
 
 	"github.com/jinzhu/gorm"
 )

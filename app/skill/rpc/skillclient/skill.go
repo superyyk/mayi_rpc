@@ -6,7 +6,7 @@ package skillclient
 import (
 	"context"
 
-	"mayi/app/skill/rpc/types/skill"
+	"github.com/superyyk/mayi_rpc/app/skill/rpc/types/skill"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
